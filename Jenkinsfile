@@ -6,7 +6,7 @@ pipeline {
         stage('Build Service Registry') {
             steps {
                 dir('service-registry') {
-                    bat 'mvn clean package'
+                    sh 'mvn clean package'
                 }
             }
         }
